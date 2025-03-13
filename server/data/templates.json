@@ -1,0 +1,64 @@
+[
+    {
+      "id": 1,
+      "name": "现代企业官网",
+      "description": "适合科技公司、创业企业的现代风格网站模板",
+      "thumbnail": "/images/现代.png",
+      "industry": "科技、互联网、创业公司",
+      "style": "现代简约",
+      "responsive": true,
+      "pages": ["首页", "关于我们", "产品服务", "联系我们", "招聘信息"],
+      "pageScreenshots": [
+        { "name": "首页", "image": "/images/现代.png" },
+        { "name": "关于我们", "image": "/images/现代.png" },
+        { "name": "产品服务", "image": "/images/现代.png" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "传统企业官网",
+      "description": "适合传统行业、制造业的稳重风格网站模板",
+      "thumbnail": "/images/传统.png",
+      "industry": "制造业、传统企业",
+      "style": "稳重大气",
+      "responsive": true,
+      "pages": ["首页", "公司简介", "产品中心", "联系方式"],
+      "pageScreenshots": [
+        { "name": "首页", "image": "/images/现代.png" },
+        { "name": "公司简介", "image": "/images/现代.png" },
+        { "name": "产品中心", "image": "/images/现代.png" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "创意设计工作室",
+      "description": "适合设计工作室、创意机构的艺术风格网站模板",
+      "thumbnail": "/images/科技.png",
+      "industry": "设计、创意、艺术",
+      "style": "创意艺术",
+      "responsive": true,
+      "pages": ["首页", "关于我们", "作品展示", "服务内容", "联系我们"],
+      "pageScreenshots": [
+        { "name": "首页", "image": "/images/现代.png" },
+        { "name": "作品展示", "image": "/images/现代.png" },
+        { "name": "服务内容", "image": "/images/现代.png" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "餐饮企业官网",
+      "description": "适合餐厅、咖啡厅等餐饮企业的美食风格网站模板",
+      "thumbnail": "/images/食物.png",
+      "industry": "餐饮、美食",
+      "style": "温馨美食",
+      "responsive": true,
+      "pages": ["首页", "品牌故事", "菜单展示", "门店信息", "加盟合作"],
+      "pageScreenshots": [
+        { "name": "首页", "image": "/images/现代.png" },
+        { "name": "菜单展示", "image": "/images/现代.png" },
+        { "name": "门店信息", "image": "/images/现代.png" }
+      ]
+    }
+  ]
+  
+  
