@@ -416,7 +416,7 @@
       }
     }
     
-    currentPage.value = template.value.pages[0]
+    currentPage.value = template.value.pages?.[0]
   })
   
   // 添加职位

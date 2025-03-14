@@ -7,17 +7,17 @@
     "thumbnail": "/images/现代.png",
     "url": "https://example.com/site1",
     "createdAt": "2023-05-15",
-    "companyName": "科技创新11有限公司",
+    "companyName": "科技创新有限公司",
     "slogan": "创新科技，改变未来",
     "logo": "",
     "bannerImage": "",
     "address": "北京市朝阳区科技园区88号",
-    "phone": "010-123456781111",
+    "phone": "010-12345678",
     "email": "contact@example.com",
     "wechat": "exampletech",
     "jobs": [
       {
-        "title": "前端开发工程师1",
+        "title": "前端开发工程师",
         "department": "研发部",
         "requirements": "熟悉Vue、React等前端框架，有3年以上开发经验。"
       },
@@ -193,7 +193,39 @@
       }
     ],
     "news": [],
-    "createdAt": "2025-03-13",
-    "url": "https://example.com/site6"
+    "createdAt": "2025-03-14",
+    "url": "https://example.com/site6",
+    "thumbnail": "/public/images/现代.png"
+  },
+  {
+    "id": 7,
+    "templateId": 2,
+    "companyName": "示例科技有限公司",
+    "slogan": "创新科技，改变未来",
+    "description": "我们是一家专注于技术创新的企业，致力于为客户提供最优质的产品和服务。",
+    "logo": "",
+    "bannerImage": "",
+    "address": "北京市朝阳区科技园区88号",
+    "phone": "010-12345678",
+    "email": "contact@example.com",
+    "wechat": "exampletech",
+    "jobs": [
+      {
+        "title": "前端开发工程师",
+        "department": "研发部",
+        "requirements": "熟悉Vue、React等前端框架，有3年以上开发经验。"
+      }
+    ],
+    "products": [
+      {
+        "name": "企业管理系统",
+        "description": "一站式企业管理解决方案，包含人事、财务、客户管理等模块。",
+        "image": ""
+      }
+    ],
+    "news": [],
+    "createdAt": "2025-03-14",
+    "url": "https://example.com/site7",
+    "thumbnail": "/public/images/现代.png"
   }
 ]

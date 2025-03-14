@@ -16,10 +16,13 @@ app.use(express.static(path.join(process.cwd(), "../dist")));
 // 模拟数据存储
 // 导入模板生成器模块
 import { generateTemplateByType } from "./template.js"
-const templates = await import('./data/templates.json', { assert: { type: 'json' } })
-  .then(module => module.default);
-const websites = await import('./data/websites.json', { assert: { type: 'json' } })
-  .then(module => module.default);
+const templates = JSON.parse(fs.readFileSync(
+  path.join(process.cwd(), "./server/data/templates.json"),"utf8"
+));
+const websites = JSON.parse(fs.readFileSync(
+  path.join(process.cwd(), "./server/data/websiteArr.json"),"utf8"
+));
+
 let websiteArr = JSON.parse(JSON.stringify(websites));
 // 模板API
 app.get("/api/templates", async (req, res) => {
@@ -213,7 +216,7 @@ app.get("/api/qrcode", (req, res) => {
 // 保存网站数据到文件
 function savewebsiteArr() {
   fs.writeFileSync(
-    path.join(process.cwd(), "./data/websiteArr.json"),
+    path.join(process.cwd(), "./server/data/websiteArr.json"),
     JSON.stringify(websiteArr, null, 2)
   );
 }
