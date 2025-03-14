@@ -100,7 +100,7 @@ const isTempPreview = computed(() => {
 const previewUrl = computed(() => {
   const previewConfig = localStorage.getItem('previewConfig');
   // const queryString = new URLSearchParams(previewConfig).toString();
-  return !isTempPreview.value ? `/api/preview/${websiteId.value}` : `/api/preview/${websiteId.value}?previewConfig=${previewConfig}`;
+  return !isTempPreview.value ? `${baseUrl}/api/preview/${websiteId.value}` : `${baseUrl}/api/preview/${websiteId.value}?previewConfig=${previewConfig}`;
 });
 
 onMounted(async () => {
@@ -130,11 +130,11 @@ onMounted(async () => {
 const generateAndShowQRCode = async () => {
   try {
     isLoading.value = true;
-    const fullUrl = window.location.origin + previewUrl.value;
+    const fullUrl = previewUrl.value;
     console.log("生成二维码URL:", fullUrl);
 
     const response = await fetch(
-      `/api/qrcode?url=${encodeURIComponent(fullUrl)}`
+      `https://companysysnode.wangyp.icu/api/qrcode?url=${encodeURIComponent(fullUrl)}`
     );
 
     if (!response.ok) {
@@ -155,7 +155,7 @@ const generateAndShowQRCode = async () => {
 
 // 复制链接
 const copyLink = () => {
-  const fullUrl = window.location.origin + previewUrl.value;
+  const fullUrl = previewUrl.value;
   if (navigator.clipboard && window.isSecureContext) {
     // navigator clipboard 向剪贴板写文本
     navigator.clipboard
@@ -211,4 +211,6 @@ const saveWebsite = async () => {
     toastStore.showToast("保存失败：" + error.message, "error");
   }
 };
+
+const baseUrl = "https://companysysnode.wangyp.icu"
 </script>

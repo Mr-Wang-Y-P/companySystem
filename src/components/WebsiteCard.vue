@@ -1,7 +1,7 @@
 <!--
  * @Author: 汪迎平
  * @Date: 2025-03-10 14:11:00
- * @LastEditTime: 2025-03-13 17:13:33
+ * @LastEditTime: 2025-03-14 11:48:47
  * @LastEditors: 汪迎平
  * @Description: 
 -->
@@ -56,7 +56,7 @@
       required: true
     }
   })
-  const baseUrl = window.location.origin
+  const baseUrl = "https://companysysnode.wangyp.icu/"
   defineEmits(['delete'])
   </script>
   
