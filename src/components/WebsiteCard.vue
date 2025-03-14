@@ -1,10 +1,3 @@
-<!--
- * @Author: 汪迎平
- * @Date: 2025-03-10 14:11:00
- * @LastEditTime: 2025-03-14 11:48:47
- * @LastEditors: 汪迎平
- * @Description: 
--->
 <template>
     <div class="bg-white overflow-hidden shadow rounded-lg">
       <div class="relative pb-2/3">
