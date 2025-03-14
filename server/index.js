@@ -18,7 +18,7 @@ app.use(express.static(path.join(process.cwd(), "../dist")));
 import { generateTemplateByType } from "./template.js"
 const templates = await import('./data/templates.json', { assert: { type: 'json' } })
   .then(module => module.default);
-  const websites = await import('./data/websites.json', { assert: { type: 'json' } })
+const websites = await import('./data/websites.json', { assert: { type: 'json' } })
   .then(module => module.default);
 let websiteArr = JSON.parse(JSON.stringify(websites));
 // 模板API
