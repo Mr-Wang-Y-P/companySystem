@@ -19,13 +19,13 @@ export default defineConfig({
   },
   server: {
     host: "0.0.0.0",
-    proxy: {
-      "/api": {
-        target: "https://companysysnode.wangyp.icu",
-        changeOrigin: true,
-        // rewrite: (path) => path.replace(/^\/api/, ""),
-      },
-    },
+    // proxy: {
+    //   "/api": {
+    //     target: "https://companysysnode.wangyp.icu",
+    //     changeOrigin: true,
+    //     // rewrite: (path) => path.replace(/^\/api/, ""),
+    //   },
+    // },
   },
 })
 
