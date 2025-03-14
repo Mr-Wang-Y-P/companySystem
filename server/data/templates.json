@@ -7,10 +7,10 @@
       "industry": "科技、互联网、创业公司",
       "style": "现代简约",
       "responsive": true,
-      "pages": ["首页", "关于我们", "产品服务", "联系我们", "招聘信息"],
+      "pages": ["首页","产品服务", "联系我们", "招聘信息"],
       "pageScreenshots": [
         { "name": "首页", "image": "/images/现代.png" },
-        { "name": "关于我们", "image": "/images/现代.png" },
+        { "name": "联系我们", "image": "/images/现代.png" },
         { "name": "产品服务", "image": "/images/现代.png" }
       ]
     },
@@ -37,7 +37,7 @@
       "industry": "设计、创意、艺术",
       "style": "创意艺术",
       "responsive": true,
-      "pages": ["首页", "关于我们", "作品展示", "服务内容", "联系我们"],
+      "pages": ["首页", "作品展示", "服务内容", "联系我们"],
       "pageScreenshots": [
         { "name": "首页", "image": "/images/现代.png" },
         { "name": "作品展示", "image": "/images/现代.png" },

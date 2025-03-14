@@ -8,7 +8,7 @@
     "build-run": "vite build",
     "serve": "node server/index.js",
     "preview": "vite preview",
-    "build": "concurrently \"npm run build\" \"npm run serve\""
+    "build": "concurrently \"npm run build-run\" \"npm run serve\""
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.12",

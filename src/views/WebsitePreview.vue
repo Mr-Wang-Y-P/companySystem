@@ -98,7 +98,9 @@ const isTempPreview = computed(() => {
 
 // 预览URL
 const previewUrl = computed(() => {
-  return `/api/preview/${websiteId.value}`;
+  const previewConfig = localStorage.getItem('previewConfig');
+  // const queryString = new URLSearchParams(previewConfig).toString();
+  return !isTempPreview.value ? `/api/preview/${websiteId.value}` : `/api/preview/${websiteId.value}?previewConfig=${previewConfig}`;
 });
 
 onMounted(async () => {

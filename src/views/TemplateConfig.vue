@@ -173,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <!-- 招聘信息配置 -->
+              <!-- 新闻动态配置 -->
               <div v-if="currentPage === '新闻动态'">
                 <div class="space-y-4">
                   <div v-for="(job, index) in websiteConfig.news" :key="index" class="border rounded-md p-4">
@@ -274,7 +274,7 @@
               </div>
               
               <!-- 产品服务配置 -->
-              <div v-if="currentPage === '产品服务' || currentPage === '产品中心' || currentPage === '服务内容'">
+              <div v-if="currentPage === '产品服务' || currentPage === '产品中心' || currentPage === '服务内容' || currentPage === '作品展示'">
                 <div class="space-y-4">
                   <div v-for="(product, index) in websiteConfig.products" :key="index" class="border rounded-md p-4">
                     <div class="flex justify-between">
