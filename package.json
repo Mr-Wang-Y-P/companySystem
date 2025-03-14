@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build-run": "vite build",
+    "build": "vite build",
     "serve": "node server/index.js",
     "preview": "vite preview",
-    "build": "concurrently \"npm run build-run\" \"npm run serve\""
+    "build-run": "concurrently \"npm run build\" \"npm run serve\""
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.12",
