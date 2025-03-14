@@ -1,7 +1,7 @@
 /*
  * @Author: 汪迎平
  * @Date: 2025-03-10 14:17:13
- * @LastEditTime: 2025-03-13 16:26:42
+ * @LastEditTime: 2025-03-14 11:33:51
  * @LastEditors: 汪迎平
  * @Description: 
  */
@@ -21,7 +21,7 @@ export default defineConfig({
     host: "0.0.0.0",
     proxy: {
       "/api": {
-        target: "http://localhost:3000",
+        target: "https://companysysnode.wangyp.icu",
         changeOrigin: true,
         // rewrite: (path) => path.replace(/^\/api/, ""),
       },
